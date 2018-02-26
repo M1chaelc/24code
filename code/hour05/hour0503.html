@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hour 05-03</title>
+	<meta charset="utf-8">
+	<script>
+		function writeIt(){
+			var hour = new Date().getHours();
+			var timeOfDay;
+			if (hour>=7 && hour<12) {
+				document.write("Good Morning!");
+				timeOfDay = "morning";
+			}
+			else if (hour>=12 && hour<18) {
+				document.write("Good Day!");
+				timeOfDay = "day";
+			}
+			else {
+				document.write("Good Night!");
+				timeOfDay = "night";
+			}
+		}
+	</script>
+</head>
+<body onload="writeIt()">
+
+</body>
+</html>

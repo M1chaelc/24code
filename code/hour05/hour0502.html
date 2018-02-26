@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hour 05-02</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body onload="writeIt()">
+
+	<p id="heading">jQuery or JavaScript</p>
+	<p id="question">Which one do you prefer</p>
+	<script>
+		function writeIt() {
+			$("#heading").css('font-weight', 'bold').html("jQuery");
+			var q = document.getElementById("question");
+			q.innerHTML = "I prefer jQuery";
+		}
+	</script>
+
+</body>
+</html>
